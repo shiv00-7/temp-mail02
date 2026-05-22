@@ -1,8 +1,8 @@
-# TempMail V2 - Secure & Disposable Email Service 📧
+# TempMail V4 - Disposable Email Service 📧
 
 <div align="center">
   
-  ![TempMail V2 Banner](images/banner.png)
+  ![TempMail V4 Banner](images/banner.png)
 
   [![GitHub Stars](https://img.shields.io/github/stars/mehmetkahya0/temp-mail?style=for-the-badge&logo=github&color=yellow)](https://github.com/mehmetkahya0/temp-mail/stargazers)
   [![GitHub Forks](https://img.shields.io/github/forks/mehmetkahya0/temp-mail?style=for-the-badge&logo=github&color=orange)](https://github.com/mehmetkahya0/temp-mail/network/members)
@@ -10,28 +10,21 @@
   [![GitHub License](https://img.shields.io/github/license/mehmetkahya0/temp-mail?style=for-the-badge&logo=github&color=blue)](https://github.com/mehmetkahya0/temp-mail/blob/main/LICENSE)
   [![Website Status](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fmehmetkahya0.github.io%2Ftemp-mail%2F&logo=googlechrome&color=green)](https://mehmetkahya0.github.io/temp-mail/)
 
-  **Protect your privacy with instant disposable email addresses**
+  **Protect your privacy with premium instant disposable email addresses**
 
   [Live Demo](https://mehmetkahya0.github.io/temp-mail/) | [Report Bug](https://github.com/mehmetkahya0/temp-mail/issues) | [Request Feature](https://github.com/mehmetkahya0/temp-mail/issues)
 </div>
-
-
-
-
 
 > [!IMPORTANT]  
 > ALL CODE FOR THIS WEBSITE IS COPYRIGHTED. YOU CANNOT USE THESE CODES AND OPEN ANOTHER WEBSITE IN THE SAME WAY. IT IS BEING TRACKED WITH VARIOUS TOOLS AND IF IT IS OPENED, A DMCA VIOLATION WILL BE SENT WITH MY LAWYER. SCANS ARE CARRIED OUT REGULARLY WITH VARIOUS TOOLS.
 >
 > PLEASE READ THE LICENSE
 
-
-
 ## 🎯 Overview
 
+TempMail V4.0 is a premium, cutting-edge temporary email solution designed for privacy-conscious users. Generate up to 5 disposable email addresses simultaneously, enjoy organic visual aesthetics, use a lightning-fast keyboard-driven Command Palette, and organize incoming mail automatically using smart semantic tags.
 
-### I had 330+ stars and 25.000+ visitors on this project before, but for some reason I had to make the repo private. As of April 23, 2025, I made it public again and all the stars are gone. 
-
-TempMail V2 is a cutting-edge temporary email solution designed for privacy-conscious users. Generate disposable email addresses instantly to protect your primary inbox from spam, tracking, and unwanted communications. Built with modern web technologies, TempMail V2 offers a sleek, responsive interface with powerful features like real-time inbox updates, dark mode, and seamless email management.
+Built entirely with pure high-performance Vanilla HTML5, CSS3, and JavaScript, TempMail V4.0 offers a highly responsive, modern glassmorphic interface with no registration or personal data required.
 
 <div align="center">
 
@@ -43,18 +36,35 @@ TempMail V2 is a cutting-edge temporary email solution designed for privacy-cons
 
 <div align="center">
   
-  ![TempMail V2 Features](images/header.png)
+  ![TempMail V4 Features](images/header.png)
   
 </div>
 
-- ⚡ **Instant Email Generation**: Create disposable emails with a single click
-- 🔄 **Auto-Refresh Capability**: Keep your inbox updated automatically at customizable intervals
-- 🔍 **Advanced Search**: Filter emails quickly by sender, subject, or content
-- 🌓 **Light & Dark Themes**: Choose your preferred visual experience with theme persistence
-- 📱 **Responsive Design**: Seamless experience across desktop, tablet, and mobile devices
-- 🔒 **Privacy Focused**: No registration or personal information required
-- 🚫 **Spam Protection**: Keep your primary inbox clean from unwanted communications
-- 📎 **Attachment Support**: View and download email attachments securely
+### 🎨 Visual & Aesthetic Excellence
+*   **Aurora Drift Keyframes**: Smooth, non-banding decoupled background glow animations utilizing independent drift animations (translation, scaling, and rotation keys).
+*   **Tactile Noise Grain Overlay**: SVG fractal film grain texture that diffuses the background color gradients, yielding a tactile, highly premium physical feel.
+*   **Glassmorphic Card UI**: Elegant responsive layout with subtle borders, glowing active states, and fluid theme transitions.
+
+### 📬 Multi-Mailbox Session Switching
+*   **Tabbed Mailbox System**: Manage up to 5 active disposable email accounts simultaneously via a sleek tab bar.
+*   **Auto-Migration & Caching**: Legacy session data is smoothly migrated to session arrays stored securely under `temp_mail_sessions_v4`. Inboxes, timers, and refresh parameters sync on tab switch.
+*   **Capacity Guard**: Limits active sessions to 5, preventing browser bloat.
+
+### ⌨️ Glassmorphic Command Palette (`Ctrl+K` / `Cmd+K`)
+*   **Fuzzy Search Overlay**: Triggered globally with a quick keystroke.
+*   **Full Keyboard Controls**: Navigate results using `Up` / `Down` arrows, execute commands with `Enter`, and dismiss the modal with `Esc`.
+*   **Direct Operations**: Instantly copy email addresses, switch tabs, regenerate, clear inboxes, change languages, or toggle dark mode.
+
+### 🏷️ Smart Highlight & Semantic Tagging
+*   **Semantic Label Classifiers**: Real-time evaluation automatically highlights incoming messages based on semantic keyword analysis:
+    *   `🔑 Verification` for OTP, verification links, activation keys, and password resets.
+    *   `🔒 Security` for logins, logins notifications, and 2FA.
+    *   `🧪 Testing` for trials, development sandboxes, and tests.
+    *   `📣 Marketing` for newsletters, offers, and promotionals.
+*   **Email Starring & Pinning**: Pin crucial emails with a golden star button that persists across visits (stored under `temp_mail_starred_ids`).
+*   **Quick Filter Chips**: Filter the inbox dynamically on the fly between `All`, `⭐ Starred`, and `🔑 Verifications`.
+
+---
 
 ## 🚀 Tech Stack
 
@@ -68,39 +78,27 @@ TempMail V2 is a cutting-edge temporary email solution designed for privacy-cons
   
 </div>
 
-- **Frontend**: HTML5, CSS3 with custom variables for theming, JavaScript (ES6 Modules)
-- **Icons & UI**: Font Awesome 6.0, custom animations
-- **APIs**: [Guerrilla Mail API](https://www.guerrillamail.com/) for email operations
-- **Storage**: LocalStorage for user preferences and session management
+*   **Frontend**: Pure HTML5 & CSS3 with HSL tailored variables, smooth CSS keyframes, and custom SVG filters.
+*   **Logic**: Vanilla JavaScript (ES6) with local storage sync, custom event loops, and Keyboard Event processing.
+*   **Icons**: Font Awesome 6.0 Free Suite.
+*   **Localization**: Integrated instant TR/EN multi-lingual engine.
+*   **API Service**: [Guerrilla Mail API](https://www.guerrillamail.com/) for high deliverability and secure operations.
+
+---
 
 ## 🖥️ Live Demo
 
-Experience TempMail V2 in action:
+Experience TempMail V4 in action:
 
 <div align="center">
   
-  [![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-Visit%20TempMail%20V2-%233B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mehmetkahya0.github.io/temp-mail/)
+  [![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-Visit%20TempMail%20V4-%233B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mehmetkahya0.github.io/temp-mail/)
   
 </div>
 
-## 📊 Star History
-
-<div align="center">
-  <a href="https://star-history.com/#mehmetkahya0/temp-mail&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mehmetkahya0/temp-mail&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mehmetkahya0/temp-mail&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mehmetkahya0/temp-mail&type=Date" />
-    </picture>
-  </a>
-</div>
+---
 
 ## 🛠️ Installation & Setup
-
-### Prerequisites
-
-- A modern web browser
-- Optional: Node.js and NPM if using Live Server
 
 ### Quick Start
 
@@ -114,13 +112,9 @@ Experience TempMail V2 in action:
    cd temp-mail
    ```
 
-3. **Launch with your preferred method:**
-
-   **Option 1:** Open index.html directly in your browser
+3. **Launch the local development environment**
    
-   **Option 2:** Use a local development server
-   
-   If you have Node.js installed:
+   If you have Node.js installed, launch a local server for live updates:
    ```bash
    # Install Live Server globally
    npm install -g live-server
@@ -128,129 +122,101 @@ Experience TempMail V2 in action:
    # Start the server
    live-server
    ```
-
-4. **Access the application**
    
-   Open your browser and navigate to:
-   - `http://127.0.0.1:8080` (if using Live Server)
-   - or directly via the file:// protocol if opening index.html
+   Alternatively, you can open `index.html` directly in any web browser of your choice.
 
-## 📱 Usage Guide
+---
 
-### Creating a Temporary Email
+## ⌨️ Keyboard Shortcuts Sheet
 
-1. When you first load the application, a random email address is automatically generated
-2. Click the **"New Address"** button to generate a different disposable email
-3. Use the **copy button** to easily copy the email address to your clipboard
+TempMail V4 supports rich shortcuts out of the box:
 
-### Managing Your Inbox
+| Shortcut | Action | Description |
+|---|---|---|
+| `Ctrl + K` or `Cmd + K` | **Command Palette** | Open the glassmorphic fuzzy search search menu |
+| `R` | **Refresh** | Fetch incoming emails manually |
+| `N` | **New Address** | Generate a fresh email address in the active tab |
+| `C` | **Copy Address** | Copy the active email address to your clipboard |
+| `/` | **Focus Search** | Jump cursor straight into the inbox search field |
+| `?` | **Help Center** | Show the shortcuts overlay guide |
+| `Esc` | **Close/Dismiss** | Close active modals, overlays, or remove search focus |
 
-1. Click **"Load Mail"** to manually fetch new messages (or enable auto-refresh)
-2. Use the search field to filter messages by sender, subject, or content
-3. Click the **eye icon** on any email to view its complete contents
-4. Remove unwanted emails with the **trash icon**
-
-### Customizing Your Experience
-
-1. **Toggle between light and dark mode** using the switch in the top-right corner
-2. Enable **"Auto-refresh"** and select your preferred interval (10s, 30s, or 1m)
-3. Access privacy policy and important information via the footer links
+---
 
 ## 📂 Project Structure
 
 ```
 temp-mail/
 ├── css/
-│   └── style.css              # Main stylesheet with theming and responsive design
+│   └── style.css              # Main stylesheet (V4 layouts, animations, dark mode variables)
 ├── js/
-│   ├── api.js                 # API interactions and email functionality
-│   ├── config.js              # Configuration and constants
-│   └── theme.js               # Theme switching functionality
+│   ├── api.js                 # Complete V4 functional API and event bindings
+│   ├── config.js              # Environment settings, constants, and API base configurations
+│   └── theme.js               # Visual dark-mode preference parser
 ├── images/
-│   ├── banner.png             # Project banner image
-│   ├── header.png             # Header image
-│   └── temp-mail-icon.png     # Application icon
+│   ├── banner.png             # Project banner
+│   ├── header.png             # Feature diagram
+│   └── temp-mail-icon.png     # Site favicon/icon
 ├── privacy/
-│   ├── privacy.css            # Privacy page styling
-│   └── privacy.html           # Privacy policy content
-├── index.html                 # Main application entry point
-├── manifest.json              # PWA manifest file
-├── robots.txt                 # Search engine directives
-├── sitemap.xml                # Site structure for search engines
-├── LICENSE                    # MIT license with commercial restrictions
-└── README.md                  # Project documentation
+│   ├── privacy.css            # Privacy policy stylesheet
+│   └── privacy.html           # Full privacy declarations page
+├── index.html                 # Premium V4 layout container
+├── manifest.json              # Web Application Manifest config
+├── robots.txt                 # Search indexing parameters
+├── sitemap.xml                # Sitemap definition
+├── LICENSE                    # Security & licensing details
+└── README.md                  # Project repository documentation
 ```
 
-## ⚙️ Core Components
+---
 
-### Email Generation System
+## ⚙️ Core V4 Components
 
-TempMail V2 uses a secure pseudorandom generation system to create unique email addresses. The system leverages the Guerrilla Mail API, ensuring high deliverability and compatibility with most services.
-
+### Session Caching & Array Switching
 ```javascript
-// Email generation example (simplified)
-const randomStr = Math.random().toString(36).substring(2, 8);
-const domain = CONFIG.DOMAINS[Math.floor(Math.random() * CONFIG.DOMAINS.length)];
-// Result: randomStr@domain
-```
-
-### Theme Engine
-
-The application features a sophisticated theming system using CSS variables and JavaScript. User preferences are stored in localStorage for persistence across sessions:
-
-```javascript
-// Theme switching
-if (darkMode) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-} else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
+// Switches between multiple mailbox tabs, restoring cache and known IDs in active memory
+function switchMailbox(index) {
+    saveCurrentSession();
+    activeSessionIndex = index;
+    const session = activeSessions[index];
+    if (session) {
+        currentEmail = session.email;
+        sessionId = session.sessionId;
+        knownMailIds = new Set(session.knownIds || []);
+        // LocalStorage sync
+        setStored(CONFIG.EMAIL_KEY, currentEmail);
+        setStored(CONFIG.SESSION_KEY, sessionId);
+        ...
+        renderMailboxTabs();
+        startSessionTimer();
+        refreshMail();
+    }
 }
 ```
 
-### Inbox Management
+### Smart Tag Regex Pattern Matching
+```javascript
+// Automatically classifies incoming emails by examining Subject and From strings
+function detectEmailTags(subject, from) {
+    const s = (subject || '').toLowerCase();
+    const f = (from || '').toLowerCase();
+    
+    if (s.includes('verify') || s.includes('code') || s.includes('otp') || s.includes('activation') || s.includes('confirm') || s.includes('onay')) {
+        return { class: 'verification', label: t('tag_verification'), icon: 'fa-key' };
+    }
+    ...
+}
+```
 
-The inbox system provides real-time updates, efficient search capabilities, and intuitive email management:
-
-- Auto-refresh with configurable intervals
-- Full-text search across all email fields
-- Modal-based email viewing with attachment support
-- One-click email deletion
-
-## 🔧 Customization Options
-
-TempMail V2 is highly customizable to suit your needs:
-
-1. **API Provider**
-   - Modify `CONFIG.API_BASE` in `js/config.js` to use a different email API provider
-
-2. **Available Domains**
-   - Edit the `DOMAINS` array in `js/config.js` to add or remove email domains
-
-3. **UI Theming**
-   - Customize the look and feel by modifying CSS variables in `css/style.css`
-
-4. **Auto-Refresh Intervals**
-   - Add or modify refresh intervals in the HTML select options and handle them in JavaScript
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-See the [open issues](https://github.com/mehmetkahya0/temp-mail/issues) for a list of proposed features and known issues.
+---
 
 ## 📜 License
 
 This project is licensed under the Special License with specific commercial restrictions - see the [LICENSE](LICENSE) file for details.
 
 **Important:** While you can use this project for personal and educational purposes, commercial use requires explicit permission from the project author.
+
+---
 
 ## 👤 Author
 
@@ -270,11 +236,13 @@ This project is licensed under the Special License with specific commercial rest
   
 </div>
 
+---
+
 ## 👏 Acknowledgments
 
-- [Guerrilla Mail](https://www.guerrillamail.com/) for their robust temporary email API
-- [Font Awesome](https://fontawesome.com/) for their comprehensive icon library
-- All contributors who have helped improve this project
+*   [Guerrilla Mail](https://www.guerrillamail.com/) for their robust temporary email API.
+*   [Font Awesome](https://fontawesome.com/) for their comprehensive icon library.
+*   All contributors who have helped improve and test this project.
 
 ---
 
