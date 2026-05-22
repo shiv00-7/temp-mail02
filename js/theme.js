@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────
-// TempMail v3.5 — Theme Controller
+// TempMail v4.0 — Theme Controller
 // Author: Mehmet Kahya
-// Last Updated: 10 February 2026
+// Last Updated: 21 May 2026
 // ─────────────────────────────────────────────
 
 const themeToggle = document.getElementById('theme-toggle');
@@ -22,7 +22,7 @@ function applyTheme(theme, animate = false) {
     // Update theme-color meta tag
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     if (metaTheme) {
-        metaTheme.content = theme === 'dark' ? '#0F172A' : '#2563EB';
+        metaTheme.content = theme === 'dark' ? '#050A18' : '#6366F1';
     }
 }
 
